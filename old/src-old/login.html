@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- <div class="loader">
+            <img class="loader__image" src="../img/loader.png" alt="loader" srcset="../img/loader.svg">
+        </div> -->
+    <header class="header_container">
+        <div class="logo_container">
+            <img class="logo_container__logo" src="../img/logo.png" alt="logo" srcset="../img/logo.svg">
+        </div>
+        <div class="header_container__menu_icon">
+            <input type="checkbox" id="toggle" class="hidden">
+            <label for="toggle">
+                <img class="navbar__menu_icon" src="../img/menu-icon.png" alt="menu icon" srcset="../img/menu-icon.svg">
+            </label>
+            <nav class="navbar">
+                <ul class="list">
+                    <li class="navbar__item shadow_box">
+                        <a href="#" class="navbar__link">Войти</a>
+                    </li>
+                    <li class="navbar__item shadow_box">
+                        <a href="#" class="navbar__link">Создать напоминание</a>
+                    </li>
+                    <li class="navbar__item shadow_box">
+                        <a href="#" class="navbar__link">Мои напоминания</a>
+                    </li>
+                    <li class="navbar__item shadow_box">
+                        <a href="#" class="navbar__link">Мои контакты</a>
+                    </li>
+                    <li class="navbar__item shadow_box">
+                        <a href="#" class="navbar__link">Справка</a>
+                    </li>
+                </ul>
+                <div class="navbar__languages">
+                    <a href="#"><img class="shadow_box" src="../img/united-kingdom.png" alt="English"
+                            srcset="../img/united-kingdom.svg"></a>
+                    <a href="#"><img class="shadow_box" src="../img/russia.png" alt="Russian" srcset="../img/russia.svg"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <p class="header_level1 dark_text">Здравствуйте!</p>
+        <p class="additional_text">Войдите, чтобы получить доступ к сервису</p>
+        <form action="">
+            <label for="" class="dark_text">Введите номер телефона</label>
+            <input class="form_item" type="tel" name="" id="" placeholder="+996">
+            <p class="dark_text">Введите 9 цифр номера</p>
+            <input type="submit" class="button accent1_item" value="Получить SMS код">
+        </form>
+        <p>
+            <span class="additional_text">При авторизации вас будет подключена услуга Планер</span>
+            <a href="#" class="accent2_text">Подробнее</a>
+        </p>
+    </main>
+    <!-- Loader hiding  -->
+    <script>
+        window.onload = () => {
+            setTimeout(() => {
+                document.querySelector(".loader").classList.add("transparent");
+            }, 3000);
+
+            setTimeout(() => {
+                document.querySelector(".loader").classList.add("hidden");
+            }, 3500);
+        }
+    </script>
+</body>
+
+</html>
